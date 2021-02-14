@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      List Data Category
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list *ngFor="let datas of myData">
+    <ion-item lines="none">
+      <ion-card class="special-card">
+
+        <b>DATA ID : {{ datas.id_category_outlet }}</b>
+        <hr style="height:2px;color:gray;background-color:gray">
+
+        <b>Isi data : </b><br>        
+        {{ datas.name_category_outlet }}  
+        
+        <br><br>
+
+        <b>Lokasin Gambar : </b><br>        
+        {{ datas.img_path_category_outlet }}  
+
+      </ion-card>
+    </ion-item>
+  </ion-list>
+  <ion-list *ngFor="let dataOfflineMode of myDataOfflineMode">
+    <ion-item lines="none">
+      <ion-card class="special-card">
+
+        <b>DATA ID : {{ dataOfflineMode.id_category_outlet }}</b>
+        <hr style="height:2px;color:gray;background-color:gray">
+
+        <b>Isi data : </b><br>        
+        {{ dataOfflineMode.name_category_outlet }}  
+        
+        <br><br>
+
+        <b>Lokasin Gambar : </b><br>        
+        {{ dataOfflineMode.img_path_category_outlet }}  
+
+      </ion-card>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer no-border>
+  <ion-card expand="block" [routerLink]="'/form-submit'" [routerDirection]="'forward'">
+    <div style="background-color:#1c98ed;text-align: center;">
+      <br>
+      <label style="font-size: small;color: white;"><b>Tambah Data</b></label>
+      <br><br>
+    </div>
+  </ion-card>
+</ion-footer>
