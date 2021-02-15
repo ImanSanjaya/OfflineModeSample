@@ -46,10 +46,17 @@
 </ion-content>
 
 <ion-footer no-border>
+  <ion-card expand="block" [routerLink]="'/form-scan'" [routerDirection]="'forward'">
+    <div style="background-color:#ed691c;text-align: center;">
+      <br>
+      <label style="font-size: small;color: white;"><b>Tambah Data Dengan Scan</b></label>
+      <br><br>
+    </div>
+  </ion-card>
   <ion-card expand="block" [routerLink]="'/form-submit'" [routerDirection]="'forward'">
     <div style="background-color:#1c98ed;text-align: center;">
       <br>
-      <label style="font-size: small;color: white;"><b>Tambah Data</b></label>
+      <label style="font-size: small;color: white;"><b>Tambah Data Dengan Input</b></label>
       <br><br>
     </div>
   </ion-card>

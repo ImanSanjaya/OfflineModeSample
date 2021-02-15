@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'form-submit',
     loadChildren: () => import('./form-submit/form-submit.module').then( m => m.FormSubmitPageModule)
   },
+  {
+    path: 'form-scan',
+    loadChildren: () => import('./form-scan/form-scan.module').then( m => m.FormScanPageModule)
+  },
 ];
 
 @NgModule({
